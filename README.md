@@ -18,6 +18,8 @@ The code in this example uses several folders and files that you will need to re
     - `editor.scss`: File for adding editor UI CSS.
     - `screen.scss`: File for adding front-end CSS.
 
+## Development
+
 - `npm install`: Install node modules.
 - `npm run start`: Watch and build process for development.
 - `npm run build`: Builds files for production.
