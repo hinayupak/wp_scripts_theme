@@ -1,0 +1,7 @@
+#footer-navigation {
+  @include atMax_MD {
+    .menu {
+      flex-direction: column;
+    }
+  }
+}

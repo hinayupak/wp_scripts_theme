@@ -1,0 +1,14 @@
+@include atMax_SM {
+  // center on mobile
+  .row-sm-center {
+    justify-content: center;
+  }
+}
+
+// margin bottom
+.mb-0 {
+  margin-bottom: 0;
+}
+.wp-block-group.mb-0 {
+  margin-bottom: 0 !important;
+}

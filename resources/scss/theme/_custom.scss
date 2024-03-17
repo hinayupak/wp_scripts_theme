@@ -1,0 +1,143 @@
+// sign up on homepage
+.module-sign-up1 {
+  position: relative;
+
+  .eb-wrapper-inner-blocks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .eb-form-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+    .eb-form {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      .eb-form-validation {
+        color: #fff !important;
+      }
+    }
+
+    .eb_form_submit_response {
+      font-size: 14px !important;
+
+      &:not(.show) {
+        display: none;
+      }
+    }
+  }
+
+  @include atSM {
+    .eb-wrapper-inner-blocks {
+      flex-direction: row;
+    }
+  }
+
+  @include atLG {
+    position: absolute !important;
+    display: inline-flex;
+    z-index: 100;
+    margin-left: 0;
+    margin-right: auto;
+    left: 20%;
+    right: 0;
+    bottom: -115px;
+  }
+
+  @include atMax_MD {
+    .eb-wrapper-outer {
+      padding: 40px 30px 20px !important;
+    }
+  }
+
+  @include atMax_XSM {
+    .wp-block-group {
+      width: 100%;
+
+      .eb-advance-heading-wrapper {
+        width: 100%;
+      }
+    }
+    .eb-form-wrapper {
+      padding-top: 15px !important;
+
+      .eb-form {
+        flex-direction: column;
+        gap: 15px;
+
+        .btn {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+// boat bg
+.section-safety-and-rescue {
+  @media screen and (max-width: 1219px) {
+    .eb-row-root-container {
+      background-size: cover;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .eb-row-root-container {
+      background-image: none;
+    }
+  }
+
+  @include atMax_MD {
+    .eb-row-root-container {
+      background-size: contain !important;
+
+      &:before {
+        background-image: linear-gradient(
+          180deg,
+          rgba(14, 27, 35, 1) 30%,
+          rgba(191, 31, 68, 0) 40%
+        ) !important;
+      }
+    }
+  }
+}
+
+// carousel homepage
+.module-custom-carousel {
+  .ebpg-post-carousel-column {
+    min-height: 230px;
+  }
+
+  @include atXL {
+    .slick-list.draggable {
+      overflow: visible !important;
+
+      &:before {
+        content: "";
+        bottom: 0;
+        background: rgb(0 0 0 / 40%);
+        height: 91%;
+        position: absolute;
+        top: 10px;
+        left: -100%;
+        width: 99%;
+        z-index: 100;
+      }
+
+      &:after {
+        content: "";
+        bottom: 0;
+        background: rgb(0 0 0 / 40%);
+        height: 91%;
+        position: absolute;
+        top: 10px;
+        right: -100%;
+        width: 99%;
+        z-index: 100;
+      }
+    }
+  }
+}
